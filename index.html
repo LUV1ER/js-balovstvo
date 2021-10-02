@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="mycss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1 Лаба</title>
+</head>
+<body>
+	<div id="workPlace">
+		<div id="Task1">
+			<h2> 1 Завдання </h2>
+			<h3>Ряд Фібоначчі</h3>
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input1" placeholder="кількість чисел">
+			<button onclick="fibonacci()">Вивести</button>
+			<p id ="output1"></p>
+		</div>
+		<div id ="Task2">
+			<h2> 2 Завдання </h2>
+			<h3>Ліфт</h3>
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input2" placeholder="номер квартири">
+			<button onclick="lift()">Піднятись</button>
+			<p id ="output2"></p>
+		</div>
+		<div id ="Task3">
+			<h2> 3 Завдання </h2>
+			<h3>Випадковий масив</h3>
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input3n" placeholder="введіть m">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input3m" placeholder="введіть n">
+			<br>
+			<button onclick="rand_Massive()">Заповнити</button>
+			<p id ="output3Mass"></p>
+			<p id ="output3Pos"></p>
+			<p id ="output3Neg"></p>
+		</div>
+		<div id ="Task4">
+			<h2> 4 Завдання </h2>
+			<h3>Розклад</h3>
+			<input type="text" id ="input4Group" placeholder="назва групи">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input4Data" placeholder="Дата">
+			<button onclick="rozklad()">Подивитись</button>
+			<p id ="output4"></p>
+		</div>
+		<div id ="Task5">
+			<h2> 5 Завдання </h2>
+			<h3>Калькулятор</h3>
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id = "input5First" placeholder="1 число">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id = "input5Second" placeholder="2 число"><br>
+			<input type="radio" id="Add" name = "action" vlaue = "add"> <label for="Add">+</label>
+			<input type="radio" id="Sub" name = "action" vlaue = "sub"> <label for="Sub">-</label>
+			<input type="radio" id="Mul" name = "action" vlaue = "mul"> <label for="Mul">*</label>
+			<input type="radio" id="Div" name = "action" vlaue = "div"> <label for="Div">/</label><br>
+			<button onclick="calculator()">Порахувати</button>
+			<p id ="output5"></p>
+		</div>
+		<div id ="Task6">
+			<h2> 6 Завдання </h2>
+			<h3>Магазин</h3>
+			<input type="text" id ="input6Name" placeholder="назва товару">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input6Price" placeholder="ціна">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input6Amount" placeholder="кількість"></br>
+			<button  id = "add" onclick="addGood()">Додати</button>
+			<button  id ="show" onclick="show()">Переглянути кошик</button>
+			<p id ="output6"></p>
+		</div>
+		<div id ="Task7">
+			<h2> 7 Завдання </h2>
+			<h3>Випадковий масив (m*n)</h3>
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input7n" placeholder="введіть n">
+			<input type="text" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" id ="input7m" placeholder="введіть m">
+			<br>
+			<button onclick="ind_Massive()">Заповнити</button>
+			<p id ="output7Mass"></p>
+			<p id ="output7Pos"></p>
+			<p id ="output7Neg"></p>
+		</div>
+	</div>
+<script src="myjs.js"></script>
+</body>
+</html>
